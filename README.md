@@ -8,7 +8,8 @@
 | 4/12 | Finalize Dataset |
 | 4/19 | Unsupervised (PCA, Clustering) |
 | 4/26 | Supervised (Linear, Tree-Based) |
-| 5/3 | Begin Final Report (Summary, Lit Review) |
+| 5/3 | Begin Final Report (Summary, Lit Review, etc.) |
+| 5/10 | Submission Deadline (5/11) |
 
 ### Useful Links
 
