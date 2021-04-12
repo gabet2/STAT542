@@ -1,0 +1,13 @@
+Food additives: distribution and co-occurrence in 126,000 food products of the French market
+https://www.nature.com/articles/s41598-020-60948-w.pdf
+
+In recent decades, the consumption of foods undergoing phyiscal, biological, and/or chemical changes and containing various additives has increased greatly. While some are harmless or perhaps even beneficial, others may be nutritionally poor and have been linked to negative health outcomes. Thus, it will be helpful to study which additives are most common and which foods are most likely to contain additives.
+
+In this study, the goal was to determine distribution and cooccurence of the over 330 food additives authorized in Europe. Clustering analysis was performed on the ingredient lists of over 126,000 French foods and beverages, retrieved from Open Food Facts. They identified a total of 35 different food categories to be used in their analysis. 
+
+To measure food additive distribution, they calculated the percentages of total food items each category represented, percentages of the items of each category which contained some number of additives (overall and by category), and many products each additive appears in. 
+
+To measure food additive cooccurence, each food product was represented with a binary vector that encoded the presence/absence of each additive. Only 141 of the additives were considered, as the others occurred too infrequently. Discrete ordinal variables used/developed by various European governments or outside food researchers to indicate the nutritional quality and degree of processing of the food products were also included. These features were then clustered using an agglomerative hierarchical clustering algorithm. The were then validated and visualized with a network analysis.
+
+It was found that overall, over half of all the food products contained additives. A large proportion of sweetened beverages, desserts, pastries, and sandwiches contained at least one additive. The most frequently used additives were citric acid, lecithins and modifed starches. The final clustering results yielded 6 clusters, and the specific additives belonging to each were also identified; the clusters represented dyes/glazing agents, additives for sandwiches and desserts, stabilizers/emulsifiers for pastries, sweeteners for gum and beverages, flavor enhancers, and preservatives/antioxidants mostly found in meats. 
+
