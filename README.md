@@ -1,29 +1,96 @@
 # STAT542 Final Project 
 
-### Unsupervised Task Research Questions
+## Unsupervised Task Research Questions
 
-We consider two "labels" for our unsupervised task: food categories & nutrition score indicator (0 if 'low' 1 if 'high'). We cluster on the three main macronutrients (carbs, fats, and proteins), **including fiber**. A priori, we know fiber will further inform the specific carbohydrate profile of a food product. For example, 100g of a twinkie and 100g strawberries will have very different carbohydrate compositions despite containing similar 
+1. Can we identify meaningful clusters of **ingredients** by clustering on the **macronutrient profiles** of different food products?
+
+## KMeans
+
+We exclude unintersting words like water, salt, sugar. **We only include products whose ingredients are contained in a master dictionary constructed from the 1000 most common ingredients**. 
+
+### Cluster 1: Nuts
+
+| Ingredient | TD-IDF |
+| :----------: | ------ |
+|almonds     |     1349.39|
+|peanuts     |     1008.16|
+|peanut-oil  |      862.64|
+|pecans      |      856.43|
+|walnuts     |      741.62|
+
+![ ](gabet/cluster_pics/c1.png)
+
+### Cluster 2: Canned Goods
+| Ingredient | TD-IDF |
+| :----------: | ------ |
+|citric-acid    |     1700.57 |
+|green-beans    |    1191.41  |
+|ascorbic-acid  |    1174.07  |
+|tomatoes       |    1109.53  |
+|corn           |    1091.18  |
+
+![ ](gabet/cluster_pics/c2.png)
+
+### Cluster 3: Sweet Beverages 
+| Ingredient | TD-IDF |
+| :----------: | ------ |
+|corn-syrup     |     1056.59 |
+|red-40         |    845.65  |
+|yellow-5       |    796.83  |
+|natural-and-artificial-flavors       |    731.32  |
+|gelatin           |    708.45 |
+
+![ ](gabet/cluster_pics/c3.png)
+
+### Cluster 4: Dairy Products
+
+| Ingredient | TD-IDF |
+| :----------: | ------ |
+|enzymes                    |     2786.47|
+|pasteurized-milk           |     2129.57|
+|cheese-culture             |     1964.59|
+|cheese-cultures            |      1162.08|
+|pasteurized-part-skim-milk|       1083.28|
+
+![ ](gabet/cluster_pics/c4.png)
+
+### Cluster 5: Pasta & Wheat Products
+
+| Ingredient | TD-IDF |
+| :----------: | ------ |
+|niacin             |  1975.59|
+|riboflavin         |  1945.83|
+|folic-acid         |  1923.36|
+|iron               |  1647.08|
+|ferrous-sulfate    |   1609.42|
+
+![ ](gabet/cluster_pics/c5.png)
+
+### Cluster 6: Desserts
+
+| Ingredient | TD-IDF |
+| :----------: | ------ |
+|cocoa-butter      |     1286.381663 |
+|soy-lecithin      |    1073.960983 |
+|chocolate-liquor  |    961.954939 |
+|vanilla           |      800.771596 |
+|butter            |     691.866868 |
+
+![ ](gabet/cluster_pics/c6.png)
+
+### Cluster 7: Meat
+
+| Ingredient | TD-IDF |
+| :----------: | ------ |
+|shrimp                     |   1085.769701 |
+|sodium-tripolyphosphate    |   772.736200 |
+|to-retain-moisture         |   686.759430 |
+|sodium-nitrite             |  563.855366 |
+|sodium-erythorbate         |  537.485338 |
+
+![ ](gabet/cluster_pics/c7.png)
 
 
-1. Can we identify meaningful clusters of macronutrient profiles *and fiber* across different **food categories**? It is often claimed that plant-based products lack adeqaute protein. We investigate this claim below. 
-    
-
-| Category      | Carbs | Fat   | Protein | Fiber |
-| :---:        | :---: | :---: | :---:   | :---: |
-| "Meat"       | 7.3   | 10.6  | 9.0     | 1.4   |
-| "Plant-Based"| 62.9  | 5.6   | 8.9     | 5.2  |
-
-The above table displays the mean macronutrients for each cluster (per 100g). After applying the 'labels', we achieve a **67.5% accuracy**. Interestingly, both clusters have similar protein compositions. IN addtion, the plant-absed cluster contains significantly mroe carbs, which is to be expected given that plant-based products are dominated by high-carb foods such as grains and legumes. 
-    
-2. Can we identify meaningful clusters of macronutrient profiles across different **nutrition scores**?
-
-    
-| Score      | Carbs | Fat   | Protein | Fiber |
-| :---:        | :---: | :---: | :---:   | :---: |
-| "Low"        | 12.1  | 13.8  | 7.3     | 1.7   |
-| "High"       | 63.6  | 10.4  | 7.2    | 4.2  |
-
-The above table displays the mean macronutrients for each cluster (per 100g). After applying the 'labels', we achieve a **67.0% accuracy**. The high score cluster suggests that a higher carb, lower fat, moderate protein, and higher fiber product will yield a higher nutrition score, which all match our intuition. 
 
 ### Soft Timeline 
 
