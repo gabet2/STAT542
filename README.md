@@ -6,7 +6,7 @@
 
 ## KMeans
 
-We exclude unintersting words like water, salt, sugar. **We only include products whose ingredients are contained in a master dictionary constructed from the 1000 most common ingredients**. 
+We exclude uninteresting words like water, salt, sugar. **We only include products whose ingredients are contained in a master dictionary constructed from the 1000 most common ingredients**. 
 
 ### Cluster 1: Nuts
 
