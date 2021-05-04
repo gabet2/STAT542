@@ -1,5 +1,40 @@
 # STAT542 Final Project 
 
+## Supervised Task Research Questions
+
+1. Can we reliably predict the nutrition score of a food product based solely on the contents of the ingredients label?
+
+### XGBoost
+
+#### Regression
+
+How well can we directly predict the nutrition score by treating nutrition score as continuous?
+
+| Data | RMSE |
+| :----------: | ------ |
+|Training     |     4.49|
+|Testing     |     4.77|
+
+
+#### Classification
+
+Splitting nutrition scores at the median, can the model seperate "healthy" foods from "unhealthy" foods?
+
+| Data | Accuracy |
+| :----------: | ------ |
+|Training     |     88.8%|
+|Testing     |     87.1%|
+
+
+2. Which **ingredients** does our model consider to be the healthiest?
+
+
+
+
+3. Which **foods** does our model consider to be the healthiest?
+
+
+
 ## Unsupervised Task Research Questions
 
 1. Can we identify meaningful clusters of **ingredients** by clustering on the **macronutrient profiles** of different food products?
