@@ -10,7 +10,7 @@ We exclude uninteresting words like water, salt, sugar. **We only include produc
 
 ### Cluster 1: Nuts
 
-| Ingredient | TD-IDF |
+| Ingredient | TF-IDF |
 | :----------: | ------ |
 |almonds     |     1349.39|
 |peanuts     |     1008.16|
@@ -21,7 +21,7 @@ We exclude uninteresting words like water, salt, sugar. **We only include produc
 ![ ](gabet/cluster_pics/c1.png)
 
 ### Cluster 2: Canned Goods
-| Ingredient | TD-IDF |
+| Ingredient | TF-IDF |
 | :----------: | ------ |
 |citric-acid    |     1700.57 |
 |green-beans    |    1191.41  |
@@ -32,7 +32,7 @@ We exclude uninteresting words like water, salt, sugar. **We only include produc
 ![ ](gabet/cluster_pics/c2.png)
 
 ### Cluster 3: Sweet Beverages 
-| Ingredient | TD-IDF |
+| Ingredient | TF-IDF |
 | :----------: | ------ |
 |corn-syrup     |     1056.59 |
 |red-40         |    845.65  |
@@ -44,7 +44,7 @@ We exclude uninteresting words like water, salt, sugar. **We only include produc
 
 ### Cluster 4: Dairy Products
 
-| Ingredient | TD-IDF |
+| Ingredient | TF-IDF |
 | :----------: | ------ |
 |enzymes                    |     2786.47|
 |pasteurized-milk           |     2129.57|
@@ -56,7 +56,7 @@ We exclude uninteresting words like water, salt, sugar. **We only include produc
 
 ### Cluster 5: Pasta & Wheat Products
 
-| Ingredient | TD-IDF |
+| Ingredient | TF-IDF |
 | :----------: | ------ |
 |niacin             |  1975.59|
 |riboflavin         |  1945.83|
@@ -68,7 +68,7 @@ We exclude uninteresting words like water, salt, sugar. **We only include produc
 
 ### Cluster 6: Desserts
 
-| Ingredient | TD-IDF |
+| Ingredient | TF-IDF |
 | :----------: | ------ |
 |cocoa-butter      |     1286.381663 |
 |soy-lecithin      |    1073.960983 |
@@ -80,7 +80,7 @@ We exclude uninteresting words like water, salt, sugar. **We only include produc
 
 ### Cluster 7: Meat
 
-| Ingredient | TD-IDF |
+| Ingredient | TF-IDF |
 | :----------: | ------ |
 |shrimp                     |   1085.769701 |
 |sodium-tripolyphosphate    |   772.736200 |
