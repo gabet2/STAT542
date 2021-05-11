@@ -10,28 +10,22 @@
 
 How well can we directly predict the nutrition score by treating nutrition score as continuous?
 
-| Data | RMSE |
-| :----------: | ------ |
-|Training     |     4.49|
-|Testing     |     4.77|
+| Data | Training RMSE | Testing RMSE |
+| :----------: | ------ | ----- |
+|LASSO     |     6.225| 6.001 |
+|Random Forest     |     4.677| 4.996 |
+|XGBoost     |     4.133| 4.805 |
 
 
 #### Classification
 
 Splitting nutrition scores at the median, can the model seperate "healthy" foods from "unhealthy" foods?
 
-| Data | Accuracy |
-| :----------: | ------ |
-|Training     |     88.8%|
-|Testing     |     87.1%|
-
-
-2. Which **ingredients** does our model consider to be the healthiest?
-
-
-
-
-3. Which **foods** does our model consider to be the healthiest?
+| Data | Training Accuracy | Testing Accuracy |
+| :----------: | ------ | ----- |
+|Penalized Logistic Regression    |     81.65%| 80.70% |
+|Random Forest     |     88.28%| 85.28% |
+|XGBoost | 89.50%| 85.68%|
 
 
 
