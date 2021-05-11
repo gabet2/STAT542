@@ -1,5 +1,7 @@
 # STAT542 Final Project 
 
+**Final code is in Master.ipynb**
+
 ## Supervised Task Research Questions
 
 1. Can we reliably predict the nutrition score of a food product based solely on the contents of the ingredients label?
